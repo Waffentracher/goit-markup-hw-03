@@ -28,10 +28,10 @@ img {
   display: block;
 }
 
-.container,
-.container-header {
-  max-width: 1440px;
+.container {
   margin: 0 auto;
+  padding: 0 32px;
+  max-width: 100%;
 }
 
 .section {
@@ -40,15 +40,17 @@ img {
 
 /* Header */
 header {
-  max-width: 1440px;
-  margin: 0;
+  padding-bottom: 8px;
 }
 .container-header {
   width: 1158px;
-
+  text-align: center;
   display: flex;
+}
+.header-inner {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: left;
 }
 
 .logo {
@@ -66,17 +68,24 @@ header {
 }
 .nav {
   display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-grow: 1;
 }
 .container-nav {
   display: flex;
+  justify-content: left;
+  flex-grow: 1;
+  gap: 40px;
+  align-items: center;
   margin: 0;
 }
 .nav-list {
-  display: flex;
-  padding: 24px;
+  display: inline-block;
+  padding: 24px 0;
   color: #434455;
-  padding-right: 40px;
-  padding-left: 76px;
+  font-weight: 500;
+  align-items: center;
 }
 
 .nav-list:hover,
@@ -88,8 +97,18 @@ header {
   color: #2e2f42;
 }
 
+.header-address {
+  display: flex;
+  align-items: center;
+}
+.address-list {
+  display: flex;
+  gap: 30px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
 .header-nav {
-  padding-right: ;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -121,7 +140,6 @@ header {
   letter-spacing: 0.02em;
   text-align: left;
   color: #434455;
-  display: flex;
 }
 
 .contact:hover,
@@ -131,14 +149,14 @@ header {
 
 /* Title */
 .first-section {
-  padding: 188px 472px 292px 472px;
   background-color: #2e2f42;
-  display: flex;
+}
+.title-inner {
+  padding: 188px 472px 292px 472px;
   flex-direction: column;
   justify-content: center;
   flex-shrink: 0;
 }
-
 .title {
   max-width: 496px;
   color: #fff;
@@ -160,13 +178,11 @@ header {
   padding: 16px 32px;
   margin: 0 auto;
   color: #fff;
-  padding: 10px 20px;
+
   border: none;
   font-size: 16px;
   cursor: pointer;
   border-radius: 4px;
-  background: var(--IRIS, #4d5ae5);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .button:hover,
 .button:focus {
@@ -224,10 +240,20 @@ header {
 .teamates {
   background-color: #f4f4fd;
 }
-.team-list {
+
+.team-item {
   background-color: #ffffff;
 }
+.team-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  padding-bottom: 120px;
+  flex-wrap: wrap;
+}
 .team {
+  padding-top: 120px;
+  margin-bottom: 72px;
   font-size: 36px;
   font-weight: 700;
   letter-spacing: 0.02em;
@@ -237,6 +263,7 @@ header {
   color: #2e2f42;
 }
 .team-names {
+  padding-top: 32px;
   color: #2e2f42;
   font-size: 20px;
   font-weight: 500;
@@ -245,6 +272,8 @@ header {
   text-align: center;
 }
 .team-names-text {
+  padding-top: 8px;
+  padding-bottom: 32px;
   background-color: #ffffff;
   color: #434455;
   font-size: 16px;
@@ -254,14 +283,41 @@ header {
   text-align: center;
 }
 /*Portfolio*/
+.portfolio-head {
+  background-color: #fff;
+}
+
 .portfolio {
+  padding-top: 120px;
+  margin-bottom: 72px;
   font-size: 36px;
   font-weight: 700;
   letter-spacing: 0.02em;
   text-align: center;
+  justify-content: center;
   line-height: 1.11;
   text-transform: capitalize;
   color: #2e2f42;
+}
+.portfolio-item {
+  display: flex;
+  gap: 24px;
+  max-width: 100%;
+  padding-bottom: 120px;
+  flex-wrap: wrap;
+}
+.portfolio-items-det {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+.portfolio-prog {
+  padding-top: 32px;
+  padding-bottom: 10px;
+  padding-left: 16px;
+}
+.portfolio-prog-text {
+  padding-bottom: 32px;
+  padding-left: 16px;
 }
 .portfolio-prog {
   color: #2e2f42;
@@ -283,12 +339,30 @@ header {
 .footer {
   background-color: #2e2f42;
 }
+.logo-footer {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+  font-weight: 700;
+  display: flex;
+  gap: 8px;
+  padding-top: 101.5px;
+  padding-left: 200px;
+  padding-bottom: 17.5px;
+  margin: 0;
+}
 
 .studio-footer {
   color: #f4f4fd;
 }
 
 .footer-under {
+  margin-left: 200px;
+  padding-bottom: 100px;
+  width: 264px;
   color: #f4f4fd;
   font-size: 16px;
   font-weight: 400;
