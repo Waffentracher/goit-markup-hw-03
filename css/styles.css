@@ -30,7 +30,7 @@ img {
 
 .container {
   margin: 0 auto;
-  padding: 0 32px;
+  padding: 0 15px;
 
   width: 1158px;
 }
@@ -40,7 +40,7 @@ img {
 }
 
 /* Header */
-header {
+.header {
   padding-bottom: 8px;
   border-bottom: 1px solid #e7e9fc;
 }
@@ -59,7 +59,7 @@ header {
   align-items: center;
 }
 
-.logo {
+.logo-head {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   line-height: 1.17;
@@ -73,7 +73,7 @@ header {
   margin-right: 76px;
 }
 
-.nav {
+.navygator {
   display: flex;
   align-items: center;
   gap: 24px;
@@ -88,7 +88,8 @@ header {
   margin: 0;
 }
 .nav-list {
-  padding: 24px 0;
+  padding-top: 24px;
+  padding-bottom: 24px;
   color: #434455;
   font-weight: 500;
   align-items: center;
@@ -160,14 +161,12 @@ header {
 /* Title */
 .first-section {
   background-color: #2e2f42;
-  padding: 188px 0;
-}
-.title-inner {
-  padding: 188px 0px 292px 0px;
+  padding: 188px 0 292px 0;
   flex-direction: column;
   align-items: center;
   flex-shrink: 0;
 }
+
 .title {
   width: 496px;
   height: 120px;
@@ -192,7 +191,6 @@ header {
   padding: 16px 32px;
   margin: 0 auto;
   color: #fff;
-  border: none;
   font-size: 16px;
   cursor: pointer;
   border-radius: 4px;
@@ -256,7 +254,7 @@ header {
 
 .team-item {
   background-color: #ffffff;
-  width: calc((100% - 72px) / 4);
+   flex-basis: calc((100% - 72px)/4)
   border-radius: 0px 0px 4px 4px;
 }
 .team-list {
@@ -329,7 +327,7 @@ header {
 .portfolio-items-det {
   box-sizing: border-box;
   margin: 0 auto;
-  width: calc((100% - 48px) / 3);
+  width: calc((100% - 48px)/3);
 }
 .name-category-prog {
   padding: 32px 16px;
@@ -368,18 +366,19 @@ header {
   padding: 100px 0;
 }
 .logo-footer {
+  display: inline-block;
+  margin-bottom: 16px;
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
   font-weight: 700;
-  display: flex;
   gap: 8px;
   padding-left: 200px;
   padding-bottom: 16px;
   margin: 0;
-  display: inline-block;
+ justify-content: left;
 }
 .studio-footer {
   color: #f4f4fd;
