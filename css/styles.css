@@ -95,7 +95,10 @@ img {
 .studio {
   color: #2e2f42;
 }
-
+.contacts-addres {
+  display: flex;
+  gap: 40px;
+}
 .header-address {
   width: 1158px;
   align-items: center;
@@ -198,12 +201,13 @@ img {
   position: absolute;
   width: 1px;
   height: 1px;
-  padding: 0;
   margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
   border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .advantages-header {
@@ -225,8 +229,6 @@ img {
   justify-content: center;
 }
 .advan-list-more {
-  flex-direction: column;
-  gap: 24px;
   width: calc((100% - 72px) / 4);
 }
 .advantages-text {
@@ -310,13 +312,12 @@ img {
 }
 .portfolio-item {
   display: flex;
-  max-width: 100%;
-  padding-bottom: 120px;
+
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
 }
-.portfolio-items-det {
+.portfolio-items {
   width: calc((100% - 48px) / 3);
 }
 
