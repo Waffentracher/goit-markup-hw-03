@@ -113,6 +113,7 @@ img {
 }
 
 .header-nav {
+  padding: 24px 0;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -224,7 +225,6 @@ img {
   justify-content: center;
 }
 .advan-list-more {
-  display: flex;
   flex-direction: column;
   gap: 24px;
   width: calc((100% - 72px) / 4);
@@ -317,8 +317,6 @@ img {
   row-gap: 48px;
 }
 .portfolio-items-det {
-  box-sizing: border-box;
-  margin: 0 auto;
   width: calc((100% - 48px) / 3);
 }
 
