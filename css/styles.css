@@ -95,10 +95,7 @@ img {
 .studio {
   color: #2e2f42;
 }
-.contacts-addres {
-  display: flex;
-  gap: 40px;
-}
+
 .header-address {
   width: 1158px;
   align-items: center;
@@ -226,7 +223,6 @@ img {
 .advan-list {
   display: flex;
   gap: 24px;
-  justify-content: center;
 }
 .advan-list-more {
   width: calc((100% - 72px) / 4);
